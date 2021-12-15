@@ -5,3 +5,5 @@ sum=0
 for digit in str(A):
     sum +=int(digit)
     print(sum)
+
+    

@@ -1,8 +1,17 @@
-#Check whether 5 is in list of first 5 natural numbers or not.
+'''Check whether the given year is leap year or not. If year is leap print ‘LEAP YEAR’ else
+print ‘COMMON YEAR’.
+Hint: • a year is a leap year if its number is exactly divisible by 4 and is not
+exactly divisible by 100
+• a year is always a leap year if its number is exactly divisible by 400'''
 
-Ab=[1,2,3,4,5]
-if 5 in Ab:
-    print("found")
+year = 2020
+if (year % 4) == 0:
+   if (year % 100) == 0:
+       if (year % 400) == 0:
+           print("{0} is a leap year".format(year))
+       else:
+           print("{0} is not a leap year".format(year))
+   else:
+       print("{0} is a leap year".format(year))
 else:
-    print("not found")
-    
+   print("{0} is not a leap year".format(year))
